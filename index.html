@@ -30,40 +30,40 @@
        // разница между == ( равно ) и === ( строго равно ). === проверяет и тип данных тоже и символку, == проверяет только символ ( например 
        // строка 5 и число 5)
 
-    //    var n = prompt('Введите число:');
-    //    if (n % 2 == 0 ) {
-    //     console.log(`Число ${n} четное`);
-    //    }
-    //    else {
-    //     console.log(`Число ${n} нечетное`)
-    //    }
+       var n = prompt('Введите число:');
+       if (n % 2 == 0 ) {
+        console.log(`Число ${n} четное`);
+       }
+       else {
+        console.log(`Число ${n} нечетное`)
+       }
 
 
-    //    var a = +prompt('Введите число:');
-    //    while (a > 0) {
-    //     console.log(a--);
-    //    }
+       var a = +prompt('Введите число:');
+       while (a > 0) {
+        console.log(a--);
+       }
 
-    //     var correct = 6;
-    //    do {
-    //     var answear = +prompt('Сколько будет 2+2*2');
-    //     if(answear !==correct){
-    //         alert('Incorrect');
-    //     }
-    //    } while (answear !==correct);
-    //    alert('Молодец');
+        var correct = 6;
+       do {
+        var answear = +prompt('Сколько будет 2+2*2');
+        if(answear !==correct){
+            alert('Incorrect');
+        }
+       } while (answear !==correct);
+       alert('Молодец');
 
 
-    //    var dividers = 0;
-    //     for (var k =+prompt('Введите число:'), i = k; i > 0; --i)  // в разработке пишут --i( прединкримент )
-    //        if(k % i === 0) {
-    //         ++dividers;
-    //        }
-    //         alert(`Количество делителей ${k}: ${dividers}`);
+       var dividers = 0;
+        for (var k =+prompt('Введите число:'), i = k; i > 0; --i)  // в разработке пишут --i( прединкримент )
+           if(k % i === 0) {
+            ++dividers;
+           }
+            alert(`Количество делителей ${k}: ${dividers}`);
            
-           // var - глобальные переменные
-           // let - локальная пересенная
-           // 
+            //  var - глобальные переменные
+            //let - локальная пересенная
+           
 
 
 
@@ -83,6 +83,11 @@
            for (let i in arr2) { // выводит индексы
                 console.log(i);
            } 
+
+           // confirm - модальное окно, где пользователь выбирает продолжение ( содержит true or false)
+           do {
+            alert('Вы сегодня выглядите просто потрясающе!');
+           }while (confirm('Хотите еще раз услышать комплимент?'));
 
 
 
