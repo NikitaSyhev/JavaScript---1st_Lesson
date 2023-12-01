@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+
+    <script>
+        //Однострочные комментарии
+        /* Многострочные 
+        комментарии*/
+
+      //  console.log('Hello, world!');  //вывод сообщения в консоль
+      //  alert('Привет, мир!');   //вывод сообщения в браузер
+
+        //создание переменных
+        // var hello = prompt(); // объявили переменную и она инициализируется через ввод пользователем за счет метода prompt
+        // alert('Вы ввели, ' + hello);
+
+        // var num1 = +prompt('Введите первое число:'); // за счет + мы показали, что тип данных "число"
+        // var num2 = +prompt('Введите второе число:');
+
+        // alert(`${num1} + ${num2} = ${num1 + num2}`);
+
+        // const pi = 3.14; // создание констант
+
+       // разница между == ( равно ) и === ( строго равно ). === проверяет и тип данных тоже и символку, == проверяет только символ ( например 
+       // строка 5 и число 5)
+
+    //    var n = prompt('Введите число:');
+    //    if (n % 2 == 0 ) {
+    //     console.log(`Число ${n} четное`);
+    //    }
+    //    else {
+    //     console.log(`Число ${n} нечетное`)
+    //    }
+
+
+    //    var a = +prompt('Введите число:');
+    //    while (a > 0) {
+    //     console.log(a--);
+    //    }
+
+    //     var correct = 6;
+    //    do {
+    //     var answear = +prompt('Сколько будет 2+2*2');
+    //     if(answear !==correct){
+    //         alert('Incorrect');
+    //     }
+    //    } while (answear !==correct);
+    //    alert('Молодец');
+
+
+    //    var dividers = 0;
+    //     for (var k =+prompt('Введите число:'), i = k; i > 0; --i)  // в разработке пишут --i( прединкримент )
+    //        if(k % i === 0) {
+    //         ++dividers;
+    //        }
+    //         alert(`Количество делителей ${k}: ${dividers}`);
+           
+           // var - глобальные переменные
+           // let - локальная пересенная
+           // 
+
+
+
+           //массивы
+           let arr1 = new Array(5, 4);
+           console.log(arr1);
+
+           let arr2 = [ 10, 20, 30, 'Hello, world', true];
+           console.log(arr2);
+
+           arr2[2] = 100;
+           arr2[10] = 5;
+           for (let i of arr2) { // выводит значения массивов
+                console.log(i);
+           } 
+
+           for (let i in arr2) { // выводит индексы
+                console.log(i);
+           } 
+
+
+
+
+    </script>
+</body>
+</html>
